@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgb(144, 140, 140);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px hsla(0, 0%, 0%, 0.774);
+        }
+        nav > a{ 
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            display: inline-block;
+            background-color: black;
+            color: white;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 0px;
+            box-shadow: 4px 4px 9px 0px;
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside{
+            background-color: rgb(142, 138, 138);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: left;
+        }
+        div#bola{
+            height: 100px;
+            width: 100;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Meu site</h1>
+            <nav>
+                <a href="https://ge.globo.com/" target="_blank">Esportes</a>
+                <a href="https://g1.globo.com/" target="_blank">Política</a>
+                <a href="https://github.com/gustavoguanabara" target="_blank">Tecnologia</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+            </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, quisquam repellendus nostrum nulla maiores ratione illo temporibus culpa, aspernatur perspiciatis ipsa sequi accusamus necessitatibus cupiditate dolorum explicabo. Laboriosam, architecto vel.</p>
+            <h2>Política</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, obcaecati. Debitis facere eaque, maiores nostrum cumque quis hic beatae cupiditate assumenda incidunt, quo dolore placeat vitae nulla quidem ratione provident.</p>
+            <h2>Tecnologia</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum libero iure rem odit alias quidem facere omnis et unde! Nisi id non error enim modi laudantium fugiat cum, laboriosam temporibus.</p>
+        </section>
+            <section id="notícias">
+                <article>
+                    <h2>Notícia sobre o Brasil</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam expedita quidem nulla, rem sequi accusantium sunt quasi officia. Similique incidunt ex maiores consectetur dolorum enim animi odit ut consequuntur aliquam?</p>
+                    <aside>
+                        <p>Artigo escrtio por José da Silva</p>
+                    </aside>
+                </article>
+            </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por André</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

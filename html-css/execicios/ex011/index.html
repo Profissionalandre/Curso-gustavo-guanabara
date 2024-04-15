@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt´br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+    <link rel="styletxut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir este site  em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width:600px )" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Àudio</h1>
+    <p>Vamos aprender a reproduzir àudios em HTML5</p>
+    <!--<audio src="midia/musica-de-quartel.mp3" controls autoplay></audio>-->
+    <!--MP3,WAV,OGG-->
+    <P><audio preload="auto" controls loop>
+        <source src="midia/musica-de-quartel.mp3" type="audio/mpeg">
+        <source src="midia/musica-de-quartel.ogg" type="audio/ogg">
+        <source src="midia/musica-de-quartel.wav" type="audio/wav">   
+        <p>Se não conseguir reproduzir, infelizmente seu navegador não reproduz audio. <a href="midia/musica-de-quartel.mp3">Clique aqui para rbaixar o arquivo mp3</a></p>
+        </audio></P>
+</body>
+</html>
