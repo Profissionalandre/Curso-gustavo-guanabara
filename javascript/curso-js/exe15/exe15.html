@@ -13,25 +13,21 @@
     <section>
         <div>
             <label for="nascimento">Ano de Nascimento: </label>
-            <input type="number" id="nascimento" name="nascimento">
+            <input type="number" id="txtano" name="txtano">
 
             <br> <br>
 
             <label>Gênero:</label>
-            <input type="radio" id="masculino" name="genero" value="masculino">
+            <input type="radio" id="masculino" name="radsex" value="masculino">
             <label for="masculino">Masculino</label>
-            <input type="radio" id="feminino" name="genero" value="feminino">
+            <input type="radio" id="feminino" name="radsex" value="feminino">
             <label for="feminino">Feminino</label>
-
-            <br> <br>
-
-            <button type="submit">Verificar</button>
-            <br><br>
-            <p>Preencha os dados acima para ver o resultado</p>
+            <p><input type="button" value="Verificar" onclick="verificar()"></p>
+            
         </div>
 
-        <div>
-
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
     
     </section>
@@ -39,6 +35,6 @@
             <p>&copy; André Nascimento</p>
         </footer>
 
-        <script src="script,js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
